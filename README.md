@@ -15,20 +15,22 @@ utilize typescript.
 You are tasked to create a job board application that display jobs posted from the admin of the site. The site is called WiseJobs.
 
 ### Users 👥
-Users should be able to scroll through the list of the latest published jobs. 
-Users can filter jobs based on: position type such as remote or in-person, salary, company and location. 
-Users should be able to view more details for each individual job.
+**Users should be able to:**
+* Scroll through the list of the latest published jobs. 
+* Filter jobs based on: position type such as remote or in-person, salary, company and location. 
+* View more details for each individual job.
 
 ### Admin users 🗣️
-Admins should have the ability to create companies.
-Admins should have the ability to view all companies and the number of postings for each company.
-Admins should have the ability to view a single company.
-Admins should have the ability to update a company.
-Admins should have the ability to delete a company and all of its postings.
-Admins should have the ability to create job postings for a selected company.
-Admins should be able to view a single job posting.
-Admins should be able to update a job posting.  
-Admins should be able to delete a job posting.
+**Admins should be able to:**
+* Create companies.
+* View all companies and the number of postings for each company.
+* View a single company.
+* Update a company.
+* Delete a company and all of its postings.
+* Create job postings for a selected company.
+* View a single job posting.
+* Update a job posting.  
+* Delete a job posting.
 
 
 ## Frontend 🤘
