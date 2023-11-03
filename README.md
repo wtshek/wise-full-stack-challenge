@@ -9,21 +9,27 @@ Anything extra is appreciated but not required for a successful completion of th
 ### Project Name: WiseJobs 🦉
 
 ## Requirements ⚙️
-Must use [Laravel](https://laravel.com/). You're allowed to use any js frameworks or libraries that you wish as long as you
+Must use [Laravel](https://laravel.com/). You're allowed to use vanilla js or any js frameworks or libraries that you wish as long as you
 utilize typescript.
 
+You are tasked to create a job board application that display jobs posted from the admin of the site. The site is called WiseJobs.
+
 ### Users 👥
-You are tasked to create a job board application that display Jobs posted from the admin of the site.
-The site is called WiseJobs and it allows candidates to scroll through the list of the latest published jobs. 
-The users can filter the jobs by category, remote/hybrid/in-person, salary and company. They should be able 
-to view each individual job details such as Title, description ( long version ), date it was posted, salary, and the 
-company that offers the job.
+Users should be able to scroll through the list of the latest published jobs. 
+Users can filter jobs based on: position type such as remote or in-person, salary, company and location. 
+Users should be able to view more details for each individual job.
 
 ### Admin users 🗣️
-Admin should have the ability to create new companies and view all the companies added and be able to modify or delete them
-along with any posts for that company. 
-They should also be able to create and post jobs for any given company. 
-They should be able to update the companies and job contents of the posts after they have been created and also delete them.
+Admins should have the ability to create companies.
+Admins should have the ability to view all companies and the number of postings for each company.
+Admins should have the ability to view a single company.
+Admins should have the ability to update a company.
+Admins should have the ability to delete a company and all of its postings.
+Admins should have the ability to create job postings for a selected company.
+Admins should be able to view a single job posting.
+Admins should be able to update a job posting.  
+Admins should be able to delete a job posting.
+
 
 ## Frontend 🤘
 The frontend design decisions and how you go about displaying the data is completely up to you.
