@@ -1,7 +1,7 @@
 # Wise Publishing Full Stack Challenge 👨‍💻
 This challenge is meant to measure your capabilities as a full stack developer and the approach you take on problem-solving.
 We are more interested on your approach rather than a finished challenge. We appreciate SOLID and KISS principles.
-We expect that a MVP of this challenge to take roughly 2h. However, you will have a day to complete the task how you see fit.
+We expect that a MVP ( Minimum Viable Product ) of this challenge to take roughly 2h. However, you will have the weekend to complete the task how you see fit.
 Anything extra is appreciated but not required for a successful completion of the challenge.
 
 ## Brief 💼
