@@ -26,7 +26,7 @@ class JobController extends Controller
 
     public function index()
     {
-        $jobs = Job::with(["company"])->paginate(100);
+        $jobs = Job::with(["company"])->paginate(15);
        
         return Inertia::render("Jobs",["data"=>$jobs]);
     }
