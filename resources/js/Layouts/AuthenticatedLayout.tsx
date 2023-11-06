@@ -32,6 +32,14 @@ export default function Authenticated({
                   Company
                 </NavLink>
               </div>
+              <div className="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                <NavLink
+                  href={route("jobs.index")}
+                  active={route().current("jobs.index")}
+                >
+                  Jobs
+                </NavLink>
+              </div>
             </div>
             <div className="hidden sm:flex sm:items-center sm:ml-6">
               <div className="ml-3 relative">
@@ -47,7 +55,19 @@ export default function Authenticated({
                   </PrimaryButton>
                 </span>
               </div>
-
+              <div className="ml-3 relative">
+                <span className="inline-flex rounded-md">
+                  <PrimaryButton>
+                    <NavLink
+                      href={route("jobs.create")}
+                      active={false}
+                      className="text-white"
+                    >
+                      Add Job
+                    </NavLink>
+                  </PrimaryButton>
+                </span>
+              </div>
               <div className="ml-3 relative">
                 <span className="inline-flex rounded-md">
                   <button
@@ -111,6 +131,12 @@ export default function Authenticated({
             >
               Company
             </ResponsiveNavLink>
+            <ResponsiveNavLink
+              href={route("jobs.index")}
+              active={route().current("jobs.index")}
+            >
+              Jobs
+            </ResponsiveNavLink>
           </div>
 
           <div className="pt-4 pb-1 border-t border-gray-200">
@@ -132,7 +158,17 @@ export default function Authenticated({
             </div>
           </div>
           <div className="pt-4 pb-1 border-t border-gray-200">
-            <div className="px-4"></div>
+            <div className="px-4">
+              <PrimaryButton>
+                <NavLink
+                  href={route("jobs.create")}
+                  active={false}
+                  className="text-white !p-0 text-sm hover:text-white hover:border-none focus:text-white focus:border-none"
+                >
+                  Add Job
+                </NavLink>
+              </PrimaryButton>
+            </div>
           </div>
         </div>
       </nav>

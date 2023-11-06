@@ -23,3 +23,28 @@ export type CompanyReturnType = {
   name: string;
   jobs: Job[];
 };
+
+export type Job = {
+  id: string;
+  role: string;
+  min_salary: number;
+  max_salary: number;
+  location: string;
+  descriptions: string;
+  remote: boolean;
+  company_id: string;
+};
+
+type JobReturnedType = {
+  id: string;
+  role: string;
+  min_salary: number;
+  max_salary: number;
+  location: string;
+  descriptions: string;
+  remote: boolean;
+  company: {
+    id: number | string;
+    name: string;
+  };
+};

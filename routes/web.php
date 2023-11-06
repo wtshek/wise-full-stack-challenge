@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\CompanyController;
+use App\Http\Controllers\JobController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -40,6 +41,19 @@ Route::middleware(['auth', 'verified'])->group(function() {
     Route::get("/add-company", function(){
         return Inertia::render("CompanyForm");
     })->name("add-company");
+
+
+    Route::get("/jobs", [JobController::class, "index"])->name("jobs.index");
+
+    Route::get("/jobs/create", [JobController::class, "showCreateForm"])->name('jobs.create');
+
+    Route::get("/jobs/{job_id}", [JobController::class, "edit"])->name('jobs.edit');
+
+    Route::put("/jobs/{job_id}", [JobController::class, "update"])->name("jobs.update");
+
+    Route::post("/jobs", [JobController::class, "store"])->name('jobs.store');
+    
+    Route::get("/jobs/{job_id}/delete", [JobController::class, "delete"])->name('jobs.delete');
 
 });
 
