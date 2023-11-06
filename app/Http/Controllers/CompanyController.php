@@ -33,7 +33,7 @@ class CompanyController extends Controller
 
     public function index()
     {
-        $companies = Company::paginate(15);
+        $companies = Company::with('jobs')->paginate(15);
         return Inertia::render("Companies",["data"=>$companies]);
     }
 
